@@ -1,0 +1,31 @@
+@media (max-width: 968px) {
+    .hero-section {
+        display: none;
+    }
+
+    .login-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-header {
+        padding: 20px 24px;
+    }
+
+    .login-content {
+        padding: 16px 24px 40px;
+    }
+
+    .login-heading h2 {
+        font-size: 24px;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+}

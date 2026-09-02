@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    color: #0F172A;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+select,
+input {
+    font-family: inherit;
+}
+
+a {
+    color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 2px solid #1D4ED8;
+    outline-offset: 2px;
+}
+
+
+
+.login-page {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+
+.hero-section {
+    position: relative;
+    width: 44%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 106px;
+    /*padding-left: 80px;*/
+    color: #fff;
+    background: #0A1A3F;
+}
+
+.campus-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(7, 15, 46, 0.95) 10%, rgba(15, 58, 138, 0.88) 100%);
+    z-index: 1;
+}
+
+.hero-header,
+.hero-content,
+.semester-card {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-header {
+    margin-bottom: 40px;
+}
+
+.brand-img img {
+    height: 38px;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-line {
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: linear-gradient(90deg, #38BDF8, #1D4ED8);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 14px;
+}
+
+.hero-content h1 span {
+    display: block;
+    background: linear-gradient(90deg, #7CC5FF, #38BDF8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-content > p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.72);
+    max-width: 380px;
+    margin-bottom: 36px;
+}
+
+.portal-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7CC5FF;
+    font-size: 16px;
+}
+
+.feature-text h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.feature-text p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.semester-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-top: 32px;
+}
+
+.semester-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.semester-item i {
+    color: #7CC5FF;
+    font-size: 16px;
+}
+
+.semester-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.semester-text span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+}
+
+.semester-text strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.login-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    min-height: 100vh;
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 48px;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #E2E8F0;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #475569;
+}
+
+.language-selector select {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #334155;
+    outline: none;
+}
+
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #E2E8F0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.theme-toggle:hover {
+    background: #F1F5F9;
+}
+
+.login-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+}
+
+.portal-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: #EFF6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1D4ED8;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.login-heading {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.welcome-label {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: #1D4ED8;
+    font-weight: 600;
+}
+
+.login-heading h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0F172A;
+    margin: 8px 0 8px;
+}
+
+.login-heading p {
+    font-size: 14px;
+    color: #64748B;
+    line-height: 1.5;
+}
+
+
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.password-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-password {
+    font-size: 13px;
+    color: #1D4ED8;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 0 14px;
+    background: #fff;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input-wrapper:focus-within {
+    border-color: #1D4ED8;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+}
+
+.input-wrapper i {
+    color: #94A3B8;
+    font-size: 15px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 13px 0;
+    font-size: 14px;
+    color: #0F172A;
+}
+
+.input-wrapper input::placeholder {
+    color: #94A3B8;
+}
+
+.toggle-password {
+    background: none;
+    border: none;
+    color: #94A3B8;
+    cursor: pointer;
+    display: flex;
+    padding: 4px;
+}
+
+.toggle-password:hover {
+    color: #475569;
+}
+
+.input-error {
+    display: block;
+    min-height: 14px;
+    font-size: 12px;
+    color: #DC2626;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.remember-device {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #475569;
+}
+
+.remember-device input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #CBD5E1;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.custom-checkbox::after {
+    content: "";
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.15s ease;
+}
+
+.remember-device input:checked ~ .custom-checkbox {
+    background: linear-gradient(135deg, #1D4ED8, #38BDF8);
+    border-color: #1D4ED8;
+}
+
+.remember-device input:checked ~ .custom-checkbox::after {
+    transform: rotate(45deg) scale(1);
+}
+
+.remember-device input:focus-visible ~ .custom-checkbox {
+    outline: 2px solid #1D4ED8;
+    outline-offset: 2px;
+}
+
+
+.login-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1E3A8A, #2E6BE6 55%, #38BDF8);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(29, 78, 216, 0.28);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+.button-loader {
+    display: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.45);
+    border-top-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: spin 0.7s linear infinite;
+}
+
+.login-button.loading .button-text,
+.login-button.loading .button-icon {
+    visibility: hidden;
+}
+
+.login-button.loading .button-loader {
+    display: inline-block;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.support-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px 16px;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    background: #F8FAFC;
+}
+
+.support-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #EFF6FF;
+    color: #1D4ED8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.support-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.support-content strong {
+    color: #0F172A;
+    font-size: 13.5px;
+}
+
+.support-content span {
+    color: #64748B;
+}
+
+.support-link {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1D4ED8;
+    background: #EFF6FF;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: background 0.15s ease;
+}
+
+.support-link:hover {
+    background: #DBEAFE;
+}
+
+
+.security-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #94A3B8;
+}
+
+.security-info i {
+    color: #22C55E;
+}
+

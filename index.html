@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAC Student Portal</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="responsivesheet" href="responsive.css"
+</head>
+
+<body>
+    <main class="login-page">
+
+        <!--Left Hero Section-->
+
+        <section class="hero-section">
+
+            <img src="Photos/campusbackground.jpg" alt="College Background Image" class="campus-background">
+
+            <!--College Details-->
+            <header class="hero-header">
+
+                <a href="#" class="brand-img">
+                    <img src="Photos/college_logo.png" alt="Academies Australasia College Logo">
+                </a>
+
+            </header>
+
+            <!--College Content-->
+            <div class="hero-content">
+
+                <span class="hero-line"></span>
+
+                <h1>
+                    Welcome to
+                    <span>AAC Student Portal</span>
+                </h1>
+
+                <p>
+                    Your gateway to academic resources,
+                    campus service and student success.
+                </p>
+
+                <!--College Features-->
+                <div class="portal-features">
+
+                    <!--Feature 1-->
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+                        <div class="feature-text">
+                            <h3>View Class Timetable</h3>
+                            <p>Stay updated with your class schedule and important dates.</p>
+                        </div>
+
+                    </div>
+
+                    <!--Feature 2-->
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+
+                        <div class="feature-text">
+                            <h3>Submit Assignments</h3>
+                            <p>Upload and manage your assignments.</p>
+                        </div>
+
+                    </div>
+
+                    <!--Feature 3-->
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+
+                        <div class="feature-text">
+                            <h3>View Academic Performance</h3>
+                            <p>View your academic grades and academic progress.</p>
+                        </div>
+
+                    </div>
+
+                    <!--Feature 4-->
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+
+                        <div class="feature-text">
+                            <h3>Track Attendance</h3>
+                            <p>Monitor your attendance records.</p>
+                        </div>
+
+                    </div>
+
+                    <!--Feature 5-->
+                    <div class="feature-item">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        </div>
+
+                        <div class="feature-text">
+                            <h3>Fee Management</h3>
+                            <p>View invoices and payment history.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Semester Information-->
+            <div class="semester-card">
+
+                <div class="semester-item">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <div class="semester-text">
+                        <span>Current Semester</span>
+                        <strong>Semester 3</strong>
+                    </div>
+
+                </div>
+
+                <div class="semester-item">
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    <div class="semester-text">
+                        <span>Academic year</span>
+                        <strong>2026</strong>
+                    </div>
+
+                </div>
+
+                <div class="semester-item">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <div class="semester-text">
+                        <span>Portal Version</span>
+                        <strong>v1.0.0</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--Right Login Section-->
+
+        <section class="login-section">
+
+            <!--Top Controls-->
+            <header class="login-header">
+
+                <div class="language-selector">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <select name="language" id="language">
+                        <option value="en">English</option>
+                        <option value="es">Chinese</option>
+                        <option value="fr">Malay</option>
+                        <option value="de">Sinhala</option>
+                    </select>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+            </header>
+
+            <!--Login Content-->
+            <div class="login-content">
+
+                <!--Portal Icon-->
+                <div class="portal-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <!--Heading-->
+                <div class="login-heading">
+
+                    <span class="welcome-label">
+                        STUDENT PORTAL
+                    </span>
+
+                    <h2>
+                        Welcome Back!
+                    </h2>
+
+                    <p>
+                        Sign in using your AAC Student Id
+                        to access your student portal.
+                    </p>
+
+                </div>
+
+                <!--Login Form-->
+                <form
+                    class="login-form"
+                    id="loginForm"
+                    action="#"
+                    method="POST"
+                    novalidate>
+
+                    <!--Student Id Field-->
+                    <div class="form-group">
+
+                        <label for="studentID">
+                            Student ID
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-id-card input-icon"></i>
+
+                            <input
+                                type="text"
+                                id="studentID"
+                                name="studentID"
+                                placeholder="Enter your Student ID"
+                                autocomplete="username"
+                                required>
+                        </div>
+
+                        <small
+                            class="input-error"
+                            id="studentIdError">
+                        </small>
+
+                    </div>
+
+                    <!--Password Field-->
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="#" class="forgot-password">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock input-icon"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required>
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                id="passwordToggle"
+                                aria-label="Show password">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="input-error"
+                            id="passwordError">
+                        </small>
+
+                    </div>
+
+                    <!--Remember Device-->
+                    <div class="form-options">
+
+                        <label class="remember-device">
+
+                            <input
+                                type="checkbox"
+                                id="rememberDevice"
+                                name="remember_device">
+
+                            <span class="custom-checkbox"></span>
+
+                            <span class="remember-text">
+                                Remember this device
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                    <!--Login Button-->
+                    <button
+                        type="submit"
+                        class="login-button"
+                        id="loginButton">
+
+                        <span class="button-text">
+                            Sign In
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right button-icon"></i>
+
+                        <span
+                            class="button-loader"
+                            id="buttonLoader"
+                            aria-hidden="true">
+                        </span>
+
+                    </button>
+
+                </form>
+
+                <!--Support Section-->
+                <div class="support-card">
+
+                    <div class="support-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <div class="support-content">
+
+                        <strong>Need Help?</strong>
+
+                        <span>Contact AAC IT Support.</span>
+
+                    </div>
+
+                    <a
+                        href="mailto:support@aac.com"
+                        class="support-link"
+                        aria-label="Contact AAC IT Support via email">
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+                <!--Security Information-->
+                <div class="security-info">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <span>
+                        Your information is secure and protected.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Custom JS -->
+    <script src="java.js"></script>
+</body>
+</html>
