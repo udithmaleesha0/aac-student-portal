@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — AAC Student Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+            <img src="Photos/college_logo.png" alt="Academies Australasia College Logo">
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard-v2.html" class="nav-item active"><i class="fa-solid fa-house"></i>Dashboard</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-circle-check"></i>Attendance</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-book-open"></i>Learning Resources</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-images"></i>Photo Gallery</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-pen-to-square"></i>Evaluation</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-folder-open"></i>Document Library</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-file-lines"></i>Exams</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-bullhorn"></i>Announcements</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-comment-dots"></i>Feedback</a>
+        </nav>
+
+        <div class="help-card">
+            <div class="help-icon"><i class="fa-solid fa-headset"></i></div>
+            <h4>Need Help?</h4>
+            <p>Our support team is here to help you.</p>
+            <a href="#" class="help-btn">Contact Support <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+    </aside>
+
+    <div class="main-area">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            <button type="button" class="menu-toggle" id="sidebarToggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="greeting">
+                <h1>Good Morning, Don Udith! <span class="wave">👋</span></h1>
+                <p>Here's what's happening today.</p>
+            </div>
+
+            <div class="topbar-right">
+
+                <button type="button" class="icon-btn" aria-label="Notifications">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notif-badge">3</span>
+                </button>
+
+                <div class="profile-chip">
+                    <div class="profile-avatar">DU</div>
+                    <div class="profile-info">
+                        <span class="profile-name">Don Udith</span>
+                        <span class="profile-role">Student</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Content -->
+        <main class="content">
+
+            <!-- Welcome Banner -->
+            <section class="welcome-banner">
+                <div class="banner-text">
+                    <span>Welcome back,</span>
+                    <h2>Don Udith Maleesha Thathsara</h2>
+                    <p>Advanced Diploma of Information Technology</p>
+                </div>
+                <img src="Photos/campusbackground.jpg" alt="" class="banner-photo">
+            </section>
+
+            <!-- Stat Cards -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue"><i class="fa-solid fa-calendar-days"></i></div>
+                    <div class="stat-label">My Classes</div>
+                    <div class="stat-value">2</div>
+                    <div class="stat-sub">Active Classes</div>
+                    <a href="#" class="stat-link">View Classes <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="stat-label">Attendance</div>
+                    <div class="stat-value">92%</div>
+                    <div class="stat-sub">This Month</div>
+                    <a href="#" class="stat-link">View Attendance <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple"><i class="fa-solid fa-clipboard-list"></i></div>
+                    <div class="stat-label">Assignments</div>
+                    <div class="stat-value">3</div>
+                    <div class="stat-sub">Pending</div>
+                    <a href="#" class="stat-link">View Assignments <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon amber"><i class="fa-solid fa-chart-simple"></i></div>
+                    <div class="stat-label">Overall Progress</div>
+                    <div class="stat-value">78%</div>
+                    <div class="stat-sub">Completed</div>
+                    <a href="#" class="stat-link">View Progress <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </section>
+
+            <!-- Announcements + Schedule -->
+            <section class="content-grid">
+
+                <div class="card announcements-card">
+
+                    <div class="card-header">
+                        <h3><i class="fa-solid fa-bullhorn"></i>Announcements</h3>
+                        <a href="#">View All</a>
+                    </div>
+
+                    <div class="announcement-list">
+
+                        <div class="announcement-row">
+                            <div class="ann-icon blue"><i class="fa-solid fa-bullhorn"></i></div>
+                            <div class="ann-body">
+                                <h4>Tertiary Results July 2026</h4>
+                                <span class="ann-meta">18 Aug 2026 &middot; By Nurashikin Binte Mohammad Rashid</span>
+                                <p>The Tertiary Results for month of July 2026 has been released. Please check the Student Portal and your respective email.</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right ann-arrow"></i>
+                        </div>
+
+                        <div class="announcement-row">
+                            <div class="ann-icon green"><i class="fa-solid fa-calendar-days"></i></div>
+                            <div class="ann-body">
+                                <h4>Re-assessment Application Deadline</h4>
+                                <p>Please be informed that the last date to apply for re-assessment is <strong>Friday, 4 September 2026.</strong></p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right ann-arrow"></i>
+                        </div>
+
+                        <div class="announcement-row">
+                            <div class="ann-icon purple"><i class="fa-solid fa-file-pen"></i></div>
+                            <div class="ann-body">
+                                <h4>Re-assessment Submission Deadline</h4>
+                                <p>Submission of Re-assessment on or before <strong>Friday, 11 September 2026.</strong></p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right ann-arrow"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="side-column">
+
+                    <div class="card schedule-card">
+
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-calendar-days"></i>Today's Schedule</h3>
+                            <a href="#">View Calendar</a>
+                        </div>
+
+                        <div class="schedule-list">
+
+                            <div class="schedule-row">
+                                <span class="sched-time">09:00 AM</span>
+                                <span class="sched-dot blue"></span>
+                                <div>
+                                    <strong>Web Development</strong>
+                                    <span>Lab 2, Level 3</span>
+                                </div>
+                            </div>
+
+                            <div class="schedule-row">
+                                <span class="sched-time">11:00 AM</span>
+                                <span class="sched-dot green"></span>
+                                <div>
+                                    <strong>Database Systems</strong>
+                                    <span>Room 305, Level 3</span>
+                                </div>
+                            </div>
+
+                            <div class="schedule-row">
+                                <span class="sched-time">02:00 PM</span>
+                                <span class="sched-dot amber"></span>
+                                <div>
+                                    <strong>Software Engineering</strong>
+                                    <span>Room 402, Level 4</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card quicklinks-card">
+
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-link"></i>Quick Links</h3>
+                        </div>
+
+                        <div class="quicklinks-grid">
+                            <a href="#" class="quicklink"><i class="fa-solid fa-user"></i>My Profile</a>
+                            <a href="#" class="quicklink"><i class="fa-solid fa-user-graduate"></i>My Results</a>
+                            <a href="#" class="quicklink"><i class="fa-solid fa-file-invoice"></i>Fee Statement</a>
+                            <a href="#" class="quicklink"><i class="fa-solid fa-calendar-days"></i>Timetable</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="app-footer">
+            <span>&copy; 2026 Academies Australasia College. All rights reserved.</span>
+            <span>Student Portal v2.0</span>
+        </footer>
+
+    </div>
+
+    <script src="dashboard-v2.js"></script>
+</body>
+</html>
